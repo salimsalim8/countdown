@@ -1,0 +1,37 @@
+@import url('https://fonts.cdnfonts.com/css/aringgo-personal-use');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Aringgo - Personal use', sans-serif;
+    box-sizing: border-box;
+}
+.box-background {
+         width: 100vw;
+            height: 100vh;
+            background-image: url(image/clock.jpeg);
+            background-position: center;
+            background-size: contain;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            padding: 0 8%;
+            position: relative;
+     }
+
+h1 {
+    font-size: 44px;
+}     
+
+     @layer components {
+        .launch div {
+            @apply basis-24 mt-4
+        }
+
+        .launch div p {
+            @apply text-6xl -mb-2
+        }
+     }
